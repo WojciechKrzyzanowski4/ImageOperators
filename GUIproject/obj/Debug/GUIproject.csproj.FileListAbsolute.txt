@@ -1,0 +1,11 @@
+C:\Users\Komputer\source\repos\GUIproject\bin\Debug\GUIproject.exe.config
+C:\Users\Komputer\source\repos\GUIproject\bin\Debug\GUIproject.exe
+C:\Users\Komputer\source\repos\GUIproject\bin\Debug\GUIproject.pdb
+C:\Users\Komputer\source\repos\GUIproject\obj\Debug\GUIproject.csproj.AssemblyReference.cache
+C:\Users\Komputer\source\repos\GUIproject\obj\Debug\GUIproject.csproj.SuggestedBindingRedirects.cache
+C:\Users\Komputer\source\repos\GUIproject\obj\Debug\GUIproject.Form1.resources
+C:\Users\Komputer\source\repos\GUIproject\obj\Debug\GUIproject.Properties.Resources.resources
+C:\Users\Komputer\source\repos\GUIproject\obj\Debug\GUIproject.csproj.GenerateResource.cache
+C:\Users\Komputer\source\repos\GUIproject\obj\Debug\GUIproject.csproj.CoreCompileInputs.cache
+C:\Users\Komputer\source\repos\GUIproject\obj\Debug\GUIproject.exe
+C:\Users\Komputer\source\repos\GUIproject\obj\Debug\GUIproject.pdb

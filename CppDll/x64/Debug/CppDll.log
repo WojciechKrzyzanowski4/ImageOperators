@@ -1,0 +1,13 @@
+﻿  CppDll.cpp
+C:\Users\Komputer\source\repos\CppDll\CppDll.cpp(9,6): warning C4273: 'sobel': inconsistent dll linkage
+C:\Users\Komputer\source\repos\CppDll\CppDll.h(10,35): message : see previous definition of 'sobel'
+C:\Users\Komputer\source\repos\CppDll\CppDll.cpp(48,6): warning C4273: 'roberts': inconsistent dll linkage
+C:\Users\Komputer\source\repos\CppDll\CppDll.h(12,35): message : see previous definition of 'roberts'
+C:\Users\Komputer\source\repos\CppDll\CppDll.cpp(85,6): warning C4273: 'sobelX': inconsistent dll linkage
+C:\Users\Komputer\source\repos\CppDll\CppDll.h(14,35): message : see previous definition of 'sobelX'
+C:\Users\Komputer\source\repos\CppDll\CppDll.cpp(111,6): warning C4273: 'sobelY': inconsistent dll linkage
+C:\Users\Komputer\source\repos\CppDll\CppDll.h(16,35): message : see previous definition of 'sobelY'
+C:\Users\Komputer\source\repos\CppDll\CppDll.cpp(137,6): warning C4273: 'inverse': inconsistent dll linkage
+C:\Users\Komputer\source\repos\CppDll\CppDll.h(18,35): message : see previous definition of 'inverse'
+     Creating library C:\Users\Komputer\source\repos\GUIproject\x64\Debug\CppDll.lib and object C:\Users\Komputer\source\repos\GUIproject\x64\Debug\CppDll.exp
+  CppDll.vcxproj -> C:\Users\Komputer\source\repos\GUIproject\x64\Debug\CppDll.dll
