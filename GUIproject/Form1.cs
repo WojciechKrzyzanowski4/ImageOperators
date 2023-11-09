@@ -132,6 +132,11 @@ namespace GUIproject
  
         }
 
+        private void infoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormInfo info = new FormInfo(); 
+            info.ShowDialog();
 
+        }
     }
 }

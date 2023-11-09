@@ -50,3 +50,4 @@ C:\Users\Komputer\ImageOperators\GUIproject\obj\x64\Debug\GUIproject.csproj.Core
 C:\Users\Komputer\ImageOperators\GUIproject\obj\x64\Debug\GUIproject.csproj.CopyComplete
 C:\Users\Komputer\ImageOperators\GUIproject\obj\x64\Debug\GUIproject.exe
 C:\Users\Komputer\ImageOperators\GUIproject\obj\x64\Debug\GUIproject.pdb
+C:\Users\Komputer\ImageOperators\GUIproject\obj\x64\Debug\GUIproject.FormInfo.resources
