@@ -19,6 +19,7 @@ namespace GUIproject
         public Form1()
         {
             InitializeComponent();
+
         }
 
         public bool asm;
@@ -50,32 +51,75 @@ namespace GUIproject
         }
         private void button1_Click(object sender, EventArgs e)
         {
+            Mat mat0 = ImageHandler.loadImageFull(fileNamePath);    
             Mat mat = ImageHandler.loadImage(fileNamePath);
             Mat mat2 = ImageHandler.loadImage(fileNamePath);
             mat = ImageHandler.convertToGrayscale(mat);
             mat2 = ImageHandler.convertToGrayscale(mat2);
-            Mat sobelX = ImageHandler.sobelXWrapper(mat, mat2);
-            Cv2.ImShow("OUTPUT IMAGE FROM THE SOBEL-X FILTER", sobelX);
+
+            if (radioButton1.Checked)
+            {
+                Cv2.ImShow("INPUT IMAGE", mat0);
+                TimeSpan timeSpan = ImageHandler.ASMsobelXOperatorWrapper(mat, mat2);
+                Cv2.ImShow("OUTPUT HORIZONTAL SOBEL FROM ASM", mat2);
+                MessageBox.Show(timeSpan.TotalMilliseconds.ToString());
+            }
+            if (radioButton2.Checked)
+            {
+                Cv2.ImShow("INPUT IMAGE", mat0);
+                TimeSpan timeSpan = ImageHandler.CPPsobelXOperatorWrapper(mat, mat2);
+                Cv2.ImShow("OUTPUT HORIZONTAL SOBEL FROM CPP", mat2);
+                MessageBox.Show(timeSpan.TotalMilliseconds.ToString());
+            }
         }
+      
 
         private void button2_Click(object sender, EventArgs e)
         {
+            Mat mat0 = ImageHandler.loadImageFull(fileNamePath);
             Mat mat = ImageHandler.loadImage(fileNamePath);
             Mat mat2 = ImageHandler.loadImage(fileNamePath);
             mat = ImageHandler.convertToGrayscale(mat);
             mat2 = ImageHandler.convertToGrayscale(mat2);
-            Mat sobelY = ImageHandler.sobelYWrapper(mat, mat2);
-            Cv2.ImShow("OUTPUT IMAGE FROM THE SOBEL-Y FILTER", sobelY);
+
+            if (radioButton1.Checked)
+            {
+                Cv2.ImShow("INPUT IMAGE", mat0);
+                TimeSpan timeSpan = ImageHandler.ASMsobelYOperatorWrapper(mat, mat2);
+                Cv2.ImShow("OUTPUT VERTICAL SOBEL FROM ASM", mat2);
+                MessageBox.Show(timeSpan.TotalMilliseconds.ToString());
+            }
+            if (radioButton2.Checked)
+            {
+                Cv2.ImShow("INPUT IMAGE", mat0);
+                TimeSpan timeSpan = ImageHandler.CPPsobelYOperatorWrapper(mat, mat2);
+                Cv2.ImShow("OUTPUT VERTICAL SOBEL FROM CPP", mat2);
+                MessageBox.Show(timeSpan.TotalMilliseconds.ToString());
+            }
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
+            Mat mat0 = ImageHandler.loadImageFull(fileNamePath);
             Mat mat = ImageHandler.loadImage(fileNamePath);
             Mat mat2 = ImageHandler.loadImage(fileNamePath);
             mat = ImageHandler.convertToGrayscale(mat);
             mat2 = ImageHandler.convertToGrayscale(mat2);
-            Mat roberts = ImageHandler.robertsWrapper(mat, mat2);
-            Cv2.ImShow("OUTPUT IMAGE FROM THE ROBERTS FILTER", roberts);
+
+            if (radioButton1.Checked)
+            {
+                Cv2.ImShow("INPUT IMAGE", mat0);
+                TimeSpan timeSpan = ImageHandler.ASMrobertsOperatorWrapper(mat, mat2);
+                Cv2.ImShow("OUTPUT ROBERTS FROM ASM", mat2);
+                MessageBox.Show(timeSpan.TotalMilliseconds.ToString());
+            }
+            if (radioButton2.Checked)
+            {
+                Cv2.ImShow("INPUT IMAGE", mat0);
+                TimeSpan timeSpan = ImageHandler.CPProbertsOperatorWrapper(mat, mat2);
+                Cv2.ImShow("OUTPUT ROBERTS FROM CPP", mat2);
+                MessageBox.Show(timeSpan.TotalMilliseconds.ToString());
+            }
         }
 
         private void button4_Click(object sender, EventArgs e){
@@ -86,15 +130,12 @@ namespace GUIproject
             mat2 = ImageHandler.convertToGrayscale(mat2);
 
             if (radioButton1.Checked) {
-                Cv2.ImShow("INPUT GREYSCALE IMAGE", mat2);
-                TimeSpan timeSpan = ImageHandler.ASMinvertImageWrapper(mat, mat2);
-                Cv2.ImShow("OUTPUT INVERTED GREYSCALE IMAGE FROM ASM", mat2);
-                MessageBox.Show(timeSpan.TotalMilliseconds.ToString());
+                //to do
             }
             if (radioButton2.Checked) {
                 Cv2.ImShow("INPUT GREYSCALE IMAGE", mat2);
                 TimeSpan timeSpan = ImageHandler.CPPinvertImageWrapper(mat, mat2);
-                Cv2.ImShow("OUTPUT INVERTED GREYSCALE IMAGE FROM CPP", mat2);
+                Cv2.ImShow("OUTPUT INVERTED IMAGE FROM CPP", mat2);
                 MessageBox.Show(timeSpan.TotalMilliseconds.ToString());
             }
         }
@@ -108,10 +149,7 @@ namespace GUIproject
 
             if (radioButton1.Checked)
             {
-                Cv2.ImShow("INPUT GREYSCALE IMAGE", mat2);
-                TimeSpan timeSpan = ImageHandler.ASMsobelOperatorWrapper(mat, mat2);
-                Cv2.ImShow("OUTPUT INVERTED GREYSCALE IMAGE FROM ASM", mat2);
-                MessageBox.Show(timeSpan.TotalMilliseconds.ToString());
+                //to do
             }
             if (radioButton2.Checked)
             {

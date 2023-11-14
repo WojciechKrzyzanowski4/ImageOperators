@@ -1,7 +1,9 @@
 ;-------------------------------------------------------------------------
 LIBRARY JADll
 EXPORTS invertImage
-EXPORTS sobelOperator
-
+EXPORTS sobelOperatorX
+EXPORTS sobelOperatorY
+EXPORTS robertsOperator
+EXPORTS ASMtestCall
 ;-------------------------------------------------------------------------
 

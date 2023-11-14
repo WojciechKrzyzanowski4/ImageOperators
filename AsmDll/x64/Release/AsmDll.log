@@ -1,7 +1,7 @@
-﻿  pch.cpp
-  dllmain.cpp
+﻿     Creating library C:\Users\Komputer\ImageOperators\GUIproject\x64\Release\AsmDll.lib and object C:\Users\Komputer\ImageOperators\GUIproject\x64\Release\AsmDll.exp
+AsmDll.exp : warning LNK4070: /OUT:JADll.dll directive in .EXP differs from output filename 'C:\Users\Komputer\ImageOperators\GUIproject\x64\Release\AsmDll.dll'; ignoring directive
   Generating code
-  Previous IPDB not found, fall back to full compilation.
-  All 1 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Incremental LTCG not supported for -Od component, build without incremental LTCG.
   Finished generating code
-  AsmDll.vcxproj -> C:\Users\Komputer\source\repos\GUIproject\x64\Release\AsmDll.dll
+AsmDll.exp : warning LNK4070: /OUT:JADll.dll directive in .EXP differs from output filename 'C:\Users\Komputer\ImageOperators\GUIproject\x64\Release\AsmDll.dll'; ignoring directive
+  AsmDll.vcxproj -> C:\Users\Komputer\ImageOperators\GUIproject\x64\Release\AsmDll.dll

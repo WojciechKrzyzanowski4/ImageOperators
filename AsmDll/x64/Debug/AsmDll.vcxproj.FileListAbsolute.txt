@@ -1,3 +1,6 @@
 C:\Users\Komputer\source\repos\AsmDll\x64\Debug\AsmDll.vcxproj.MdMergeInputs.cache
 C:\Users\Komputer\source\repos\AsmDll\x64\Debug\AsmDll.vcxproj.cppwinrt_plat.cache
 C:\Users\Komputer\source\repos\AsmDll\x64\Debug\AsmDll.vcxproj.cppwinrt_comp.cache
+C:\Users\Komputer\ImageOperators\AsmDll\x64\Debug\AsmDll.vcxproj.MdMergeInputs.cache
+C:\Users\Komputer\ImageOperators\AsmDll\x64\Debug\AsmDll.vcxproj.cppwinrt_plat.cache
+C:\Users\Komputer\ImageOperators\AsmDll\x64\Debug\AsmDll.vcxproj.cppwinrt_comp.cache

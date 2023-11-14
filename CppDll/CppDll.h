@@ -16,3 +16,5 @@ extern "C" CPPDLLLIBRARY_API void sobelX(unsigned char* data_in, unsigned char* 
 extern "C" CPPDLLLIBRARY_API void sobelY(unsigned char* data_in, unsigned char* data_out, int input_rows, int input_cols);
 
 extern "C" CPPDLLLIBRARY_API void inverse(unsigned char* data_in, unsigned char* data_out, int input_rows, int input_cols);
+
+extern "C" CPPDLLLIBRARY_API void testCall();

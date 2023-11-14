@@ -141,3 +141,7 @@ void inverse(unsigned char* data_in, unsigned char* data_out, int input_rows, in
         }
     }
 }
+
+void testCall() {
+
+}

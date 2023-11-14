@@ -1,19 +1,20 @@
-﻿  pch.cpp
-  CppDll.cpp
-C:\Users\Komputer\source\repos\CppDll\CppDll.cpp(9,6): warning C4273: 'sobel': inconsistent dll linkage
-C:\Users\Komputer\source\repos\CppDll\CppDll.h(10,35): message : see previous definition of 'sobel'
-C:\Users\Komputer\source\repos\CppDll\CppDll.cpp(48,6): warning C4273: 'roberts': inconsistent dll linkage
-C:\Users\Komputer\source\repos\CppDll\CppDll.h(12,35): message : see previous definition of 'roberts'
-C:\Users\Komputer\source\repos\CppDll\CppDll.cpp(85,6): warning C4273: 'sobelX': inconsistent dll linkage
-C:\Users\Komputer\source\repos\CppDll\CppDll.h(14,35): message : see previous definition of 'sobelX'
-C:\Users\Komputer\source\repos\CppDll\CppDll.cpp(111,6): warning C4273: 'sobelY': inconsistent dll linkage
-C:\Users\Komputer\source\repos\CppDll\CppDll.h(16,35): message : see previous definition of 'sobelY'
-C:\Users\Komputer\source\repos\CppDll\CppDll.cpp(137,6): warning C4273: 'inverse': inconsistent dll linkage
-C:\Users\Komputer\source\repos\CppDll\CppDll.h(18,35): message : see previous definition of 'inverse'
-  dllmain.cpp
-     Creating library C:\Users\Komputer\source\repos\GUIproject\x64\Release\CppDll.lib and object C:\Users\Komputer\source\repos\GUIproject\x64\Release\CppDll.exp
+﻿  CppDll.cpp
+C:\Users\Komputer\ImageOperators\CppDll\CppDll.cpp(9,6): warning C4273: 'sobel': inconsistent dll linkage
+C:\Users\Komputer\ImageOperators\CppDll\CppDll.h(10,35): message : see previous definition of 'sobel'
+C:\Users\Komputer\ImageOperators\CppDll\CppDll.cpp(48,6): warning C4273: 'roberts': inconsistent dll linkage
+C:\Users\Komputer\ImageOperators\CppDll\CppDll.h(12,35): message : see previous definition of 'roberts'
+C:\Users\Komputer\ImageOperators\CppDll\CppDll.cpp(85,6): warning C4273: 'sobelX': inconsistent dll linkage
+C:\Users\Komputer\ImageOperators\CppDll\CppDll.h(14,35): message : see previous definition of 'sobelX'
+C:\Users\Komputer\ImageOperators\CppDll\CppDll.cpp(111,6): warning C4273: 'sobelY': inconsistent dll linkage
+C:\Users\Komputer\ImageOperators\CppDll\CppDll.h(16,35): message : see previous definition of 'sobelY'
+C:\Users\Komputer\ImageOperators\CppDll\CppDll.cpp(137,6): warning C4273: 'inverse': inconsistent dll linkage
+C:\Users\Komputer\ImageOperators\CppDll\CppDll.h(18,35): message : see previous definition of 'inverse'
+C:\Users\Komputer\ImageOperators\CppDll\CppDll.cpp(145,6): warning C4273: 'testCall': inconsistent dll linkage
+C:\Users\Komputer\ImageOperators\CppDll\CppDll.h(20,35): message : see previous definition of 'testCall'
+     Creating library C:\Users\Komputer\ImageOperators\GUIproject\x64\Release\CppDll.lib and object C:\Users\Komputer\ImageOperators\GUIproject\x64\Release\CppDll.exp
   Generating code
-  Previous IPDB not found, fall back to full compilation.
-  All 77 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  0 of 78 functions ( 0.0%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
   Finished generating code
-  CppDll.vcxproj -> C:\Users\Komputer\source\repos\GUIproject\x64\Release\CppDll.dll
+  CppDll.vcxproj -> C:\Users\Komputer\ImageOperators\GUIproject\x64\Release\CppDll.dll

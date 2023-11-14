@@ -33,6 +33,7 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.homeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.chooseInputImageToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.infoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sobelsAlgorithmToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -47,7 +48,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label4 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -65,7 +65,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(519, 47);
             this.button1.TabIndex = 0;
-            this.button1.Text = "Perform the sobel X operator";
+            this.button1.Text = "Perform the sobel HORIZONTAL operator";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -97,9 +97,16 @@
             // chooseInputImageToolStripMenuItem
             // 
             this.chooseInputImageToolStripMenuItem.Name = "chooseInputImageToolStripMenuItem";
-            this.chooseInputImageToolStripMenuItem.Size = new System.Drawing.Size(181, 22);
+            this.chooseInputImageToolStripMenuItem.Size = new System.Drawing.Size(207, 22);
             this.chooseInputImageToolStripMenuItem.Text = "Choose Input Image";
             this.chooseInputImageToolStripMenuItem.Click += new System.EventHandler(this.chooseInputImageToolStripMenuItem_Click);
+            // 
+            // exitToolStripMenuItem
+            // 
+            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(207, 22);
+            this.exitToolStripMenuItem.Text = "Select output folder";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // infoToolStripMenuItem
             // 
@@ -125,13 +132,13 @@
             // sobelsAlgorithmToolStripMenuItem
             // 
             this.sobelsAlgorithmToolStripMenuItem.Name = "sobelsAlgorithmToolStripMenuItem";
-            this.sobelsAlgorithmToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.sobelsAlgorithmToolStripMenuItem.Size = new System.Drawing.Size(194, 22);
             this.sobelsAlgorithmToolStripMenuItem.Text = "Sobels Algorithm";
             // 
             // robertsAlgorithmToolStripMenuItem
             // 
             this.robertsAlgorithmToolStripMenuItem.Name = "robertsAlgorithmToolStripMenuItem";
-            this.robertsAlgorithmToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.robertsAlgorithmToolStripMenuItem.Size = new System.Drawing.Size(194, 22);
             this.robertsAlgorithmToolStripMenuItem.Text = "Roberts Algorithm";
             // 
             // button2
@@ -145,7 +152,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(519, 47);
             this.button2.TabIndex = 2;
-            this.button2.Text = "Perform the sobel Y operator";
+            this.button2.Text = "Perform the sobel VERTICAL operator";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -262,13 +269,6 @@
             this.label3.Size = new System.Drawing.Size(405, 19);
             this.label3.TabIndex = 15;
             this.label3.Text = "To enable the operators please select an image first";
-            // 
-            // exitToolStripMenuItem
-            // 
-            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(207, 22);
-            this.exitToolStripMenuItem.Text = "Select output folder";
-            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // label4
             // 

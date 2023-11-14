@@ -18,27 +18,31 @@ namespace GUIproject
     {
         public ImageHandler() { }
 
-
+        //handlig the openCvSharp Functions
         public static Mat loadImage(string imagePath)
         {
-            return Cv2.ImRead(imagePath, ImreadModes.Color);
+            //the image in read in with greyscale
+            return Cv2.ImRead(imagePath, ImreadModes.Grayscale);
+        }
+
+        public static Mat loadImageFull(string imagePath)
+        {
+            //the image in read in with greyscale
+            return Cv2.ImRead(imagePath);
         }
 
         public static Mat convertToGrayscale(Mat image)
         {
-            var grayImage = new Mat();
-            Cv2.CvtColor(image, grayImage, ColorConversionCodes.BGR2GRAY);
-            return grayImage;
+            return image;
         }
+
         unsafe public static Mat createMat(int rows, int cols, byte* data)
         {
-
             Mat mat = new Mat(rows, cols, MatType.CV_8UC1, (IntPtr)data);
-
             return mat;
         }
 
-
+        //image inversion wrappers
         unsafe public static TimeSpan ASMinvertImageWrapper(Mat input, Mat output)
         {
             Stopwatch sw = Stopwatch.StartNew();    
@@ -46,31 +50,54 @@ namespace GUIproject
             sw.Stop();  
             TimeSpan timeSpan = sw.Elapsed;
             return timeSpan;
-
-
         }
-
         unsafe public static TimeSpan CPPinvertImageWrapper(Mat input, Mat output)
         {
             Stopwatch sw = Stopwatch.StartNew();
-            NativeMehtods.inverse(input.Data, output.Data, input.Cols, input.Rows);
+            NativeMehtods.inverse(input.Data, output.Data, input.Rows, input.Cols);
             sw.Stop();
             TimeSpan timeSpan = sw.Elapsed;
             return timeSpan;
-            
         }
 
-
-        unsafe public static TimeSpan ASMsobelOperatorWrapper(Mat input, Mat output)
+        //sobelX operator Wrappers
+        unsafe public static TimeSpan ASMsobelXOperatorWrapper(Mat input, Mat output)
         {
             Stopwatch sw = Stopwatch.StartNew();
-            NativeMehtods.sobelOperator(input.Data, output.Data, input.Cols, input.Rows);
+            NativeMehtods.sobelOperatorX(input.Data, output.Data, input.Cols, input.Rows);
             sw.Stop();
             TimeSpan timeSpan = sw.Elapsed;
             return timeSpan;
-
         }
 
+        unsafe public static TimeSpan CPPsobelXOperatorWrapper(Mat input, Mat output)
+        {
+            Stopwatch sw = Stopwatch.StartNew();
+            NativeMehtods.sobelX(input.Data, output.Data, input.Rows, input.Cols);
+            sw.Stop();
+            TimeSpan timeSpan = sw.Elapsed;
+            return timeSpan;
+        }
+
+        //sobelY operator Wrappers
+        unsafe public static TimeSpan ASMsobelYOperatorWrapper(Mat input, Mat output)
+        {
+            Stopwatch sw = Stopwatch.StartNew();
+            NativeMehtods.sobelOperatorY(input.Data, output.Data, input.Cols, input.Rows);
+            sw.Stop();
+            TimeSpan timeSpan = sw.Elapsed;
+            return timeSpan;
+        }
+        unsafe public static TimeSpan CPPsobelYOperatorWrapper(Mat input, Mat output)
+        {
+            Stopwatch sw = Stopwatch.StartNew();
+            NativeMehtods.sobelY(input.Data, output.Data, input.Rows, input.Cols);
+            sw.Stop();
+            TimeSpan timeSpan = sw.Elapsed;
+            return timeSpan;
+        }
+
+        //Full sobel operator Wrappers
         unsafe public static TimeSpan CPPsobelOperatorWrapper(Mat input, Mat output)
         {
             Stopwatch sw = Stopwatch.StartNew();
@@ -82,28 +109,27 @@ namespace GUIproject
         }
 
 
-        unsafe public static Mat sobelXWrapper(Mat input, Mat output)
+
+
+        //full sobel opertor Wrappers
+        unsafe public static TimeSpan CPProbertsOperatorWrapper(Mat input, Mat output)
         {
-
-            NativeMehtods.sobelX(input.Data, output.Data, input.Rows, input.Cols);
-
-            return output;
-        }
-
-        unsafe public static Mat sobelYWrapper(Mat input, Mat output)
-        {
-
-            NativeMehtods.sobelY(input.Data, output.Data, input.Rows, input.Cols);
-
-            return output;
-        }
-
-        unsafe public static Mat robertsWrapper(Mat input, Mat output)
-        {
-
+            Stopwatch sw = Stopwatch.StartNew();
             NativeMehtods.roberts(input.Data, output.Data, input.Rows, input.Cols);
+            sw.Stop();
+            TimeSpan timeSpan = sw.Elapsed;
+            return timeSpan;
 
-            return output;
         }
+        unsafe public static TimeSpan ASMrobertsOperatorWrapper(Mat input, Mat output)
+        {
+            Stopwatch sw = Stopwatch.StartNew();
+            NativeMehtods.robertsOperator(input.Data, output.Data, input.Cols, input.Rows);
+            sw.Stop();
+            TimeSpan timeSpan = sw.Elapsed;
+            return timeSpan;
+
+        }
+
     }
 }

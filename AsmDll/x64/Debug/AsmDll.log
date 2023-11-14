@@ -1,4 +1,7 @@
-﻿  LINK : C:\Users\Komputer\source\repos\GUIproject\x64\Debug\AsmDll.dll not found or not built by the last incremental link; performing full link
-     Creating library C:\Users\Komputer\source\repos\GUIproject\x64\Debug\AsmDll.lib and object C:\Users\Komputer\source\repos\GUIproject\x64\Debug\AsmDll.exp
-AsmDll.exp : warning LNK4070: /OUT:JADll.dll directive in .EXP differs from output filename 'C:\Users\Komputer\source\repos\GUIproject\x64\Debug\AsmDll.dll'; ignoring directive
-  AsmDll.vcxproj -> C:\Users\Komputer\source\repos\GUIproject\x64\Debug\AsmDll.dll
+﻿  Assembling assembly.asm...
+assembly.asm(11): warning A6004: procedure argument or local not referenced : hInstDLL
+assembly.asm(11): warning A6004: procedure argument or local not referenced : reason
+assembly.asm(11): warning A6004: procedure argument or local not referenced : reserved1
+     Creating library C:\Users\Komputer\ImageOperators\GUIproject\x64\Debug\AsmDll.lib and object C:\Users\Komputer\ImageOperators\GUIproject\x64\Debug\AsmDll.exp
+AsmDll.exp : warning LNK4070: /OUT:JADll.dll directive in .EXP differs from output filename 'C:\Users\Komputer\ImageOperators\GUIproject\x64\Debug\AsmDll.dll'; ignoring directive
+  AsmDll.vcxproj -> C:\Users\Komputer\ImageOperators\GUIproject\x64\Debug\AsmDll.dll

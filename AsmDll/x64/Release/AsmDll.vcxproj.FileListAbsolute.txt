@@ -1,0 +1,3 @@
+C:\Users\Komputer\ImageOperators\AsmDll\x64\Release\AsmDll.vcxproj.MdMergeInputs.cache
+C:\Users\Komputer\ImageOperators\AsmDll\x64\Release\AsmDll.vcxproj.cppwinrt_plat.cache
+C:\Users\Komputer\ImageOperators\AsmDll\x64\Release\AsmDll.vcxproj.cppwinrt_comp.cache
