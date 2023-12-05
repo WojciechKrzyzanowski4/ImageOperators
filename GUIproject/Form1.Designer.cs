@@ -43,7 +43,6 @@
             this.button4 = new System.Windows.Forms.Button();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.button5 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -60,7 +59,7 @@
             this.button1.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(575, 298);
+            this.button1.Location = new System.Drawing.Point(576, 262);
             this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(519, 47);
@@ -72,6 +71,8 @@
             // menuStrip1
             // 
             this.menuStrip1.BackColor = System.Drawing.Color.Transparent;
+            this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.homeToolStripMenuItem,
             this.infoToolStripMenuItem,
@@ -79,7 +80,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(9, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(1119, 25);
+            this.menuStrip1.Size = new System.Drawing.Size(1119, 34);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -91,20 +92,20 @@
             this.homeToolStripMenuItem.Font = new System.Drawing.Font("Arial Black", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.homeToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.homeToolStripMenuItem.Name = "homeToolStripMenuItem";
-            this.homeToolStripMenuItem.Size = new System.Drawing.Size(58, 21);
+            this.homeToolStripMenuItem.Size = new System.Drawing.Size(85, 30);
             this.homeToolStripMenuItem.Text = "Home";
             // 
             // chooseInputImageToolStripMenuItem
             // 
             this.chooseInputImageToolStripMenuItem.Name = "chooseInputImageToolStripMenuItem";
-            this.chooseInputImageToolStripMenuItem.Size = new System.Drawing.Size(207, 22);
+            this.chooseInputImageToolStripMenuItem.Size = new System.Drawing.Size(311, 34);
             this.chooseInputImageToolStripMenuItem.Text = "Choose Input Image";
             this.chooseInputImageToolStripMenuItem.Click += new System.EventHandler(this.chooseInputImageToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(207, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(311, 34);
             this.exitToolStripMenuItem.Text = "Select output folder";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -113,7 +114,7 @@
             this.infoToolStripMenuItem.Font = new System.Drawing.Font("Arial Black", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.infoToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.infoToolStripMenuItem.Name = "infoToolStripMenuItem";
-            this.infoToolStripMenuItem.Size = new System.Drawing.Size(46, 21);
+            this.infoToolStripMenuItem.Size = new System.Drawing.Size(66, 30);
             this.infoToolStripMenuItem.Text = "Info";
             this.infoToolStripMenuItem.Click += new System.EventHandler(this.infoToolStripMenuItem_Click);
             // 
@@ -125,20 +126,20 @@
             this.aboutToolStripMenuItem.Font = new System.Drawing.Font("Arial Black", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.aboutToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(58, 21);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(86, 30);
             this.aboutToolStripMenuItem.Text = "About";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
             // sobelsAlgorithmToolStripMenuItem
             // 
             this.sobelsAlgorithmToolStripMenuItem.Name = "sobelsAlgorithmToolStripMenuItem";
-            this.sobelsAlgorithmToolStripMenuItem.Size = new System.Drawing.Size(194, 22);
+            this.sobelsAlgorithmToolStripMenuItem.Size = new System.Drawing.Size(294, 34);
             this.sobelsAlgorithmToolStripMenuItem.Text = "Sobels Algorithm";
             // 
             // robertsAlgorithmToolStripMenuItem
             // 
             this.robertsAlgorithmToolStripMenuItem.Name = "robertsAlgorithmToolStripMenuItem";
-            this.robertsAlgorithmToolStripMenuItem.Size = new System.Drawing.Size(194, 22);
+            this.robertsAlgorithmToolStripMenuItem.Size = new System.Drawing.Size(294, 34);
             this.robertsAlgorithmToolStripMenuItem.Text = "Roberts Algorithm";
             // 
             // button2
@@ -147,7 +148,7 @@
             this.button2.Enabled = false;
             this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(575, 354);
+            this.button2.Location = new System.Drawing.Point(575, 336);
             this.button2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(519, 47);
@@ -162,7 +163,7 @@
             this.button3.Enabled = false;
             this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(575, 241);
+            this.button3.Location = new System.Drawing.Point(575, 187);
             this.button3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(519, 47);
@@ -193,7 +194,7 @@
             this.radioButton1.Location = new System.Drawing.Point(598, 72);
             this.radioButton1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(61, 23);
+            this.radioButton1.Size = new System.Drawing.Size(86, 32);
             this.radioButton1.TabIndex = 9;
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "ASM";
@@ -207,27 +208,12 @@
             this.radioButton2.Location = new System.Drawing.Point(598, 104);
             this.radioButton2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(58, 23);
+            this.radioButton2.Size = new System.Drawing.Size(81, 32);
             this.radioButton2.TabIndex = 10;
             this.radioButton2.TabStop = true;
             this.radioButton2.Text = "CPP";
             this.radioButton2.UseVisualStyleBackColor = true;
             this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
-            // 
-            // button5
-            // 
-            this.button5.BackColor = System.Drawing.Color.Black;
-            this.button5.Enabled = false;
-            this.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Location = new System.Drawing.Point(575, 184);
-            this.button5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(519, 47);
-            this.button5.TabIndex = 11;
-            this.button5.Text = "Perform the full sobel operator";
-            this.button5.UseVisualStyleBackColor = false;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // label1
             // 
@@ -236,7 +222,7 @@
             this.label1.Location = new System.Drawing.Point(571, 39);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(316, 19);
+            this.label1.Size = new System.Drawing.Size(456, 28);
             this.label1.TabIndex = 12;
             this.label1.Text = "Select the preferred language for the dll:";
             // 
@@ -246,7 +232,7 @@
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(571, 141);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(306, 19);
+            this.label2.Size = new System.Drawing.Size(439, 28);
             this.label2.TabIndex = 13;
             this.label2.Text = "Select which operator you want to use:";
             // 
@@ -266,7 +252,7 @@
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(626, 485);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(405, 19);
+            this.label3.Size = new System.Drawing.Size(580, 28);
             this.label3.TabIndex = 15;
             this.label3.Text = "To enable the operators please select an image first";
             // 
@@ -276,13 +262,13 @@
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(749, 513);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(166, 19);
+            this.label4.Size = new System.Drawing.Size(238, 28);
             this.label4.TabIndex = 16;
             this.label4.Text = "Home -> Input image";
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 28F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(1119, 559);
@@ -291,7 +277,6 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button5);
             this.Controls.Add(this.radioButton2);
             this.Controls.Add(this.radioButton1);
             this.Controls.Add(this.button4);
@@ -300,6 +285,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.menuStrip1);
             this.Font = new System.Drawing.Font("Arial Black", 10F, System.Drawing.FontStyle.Bold);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Form1";
@@ -327,7 +313,6 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox1;

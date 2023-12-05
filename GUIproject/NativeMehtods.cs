@@ -12,36 +12,32 @@ namespace GUIproject
     {
 
 
-        [DllImport("C:\\Users\\Komputer\\ImageOperators\\GUIproject\\x64\\Release\\CppDll.dll")]
+        [DllImport("C:\\Users\\user\\ImageOperators\\GUIproject\\x64\\Release\\CppDll.dll")]
         unsafe public static extern void inverse(IntPtr input, IntPtr output, int input_rows, int input_cols);
 
-        [DllImport("C:\\Users\\Komputer\\ImageOperators\\GUIproject\\x64\\Release\\CppDll.dll")]
+        [DllImport("C:\\Users\\user\\ImageOperators\\GUIproject\\x64\\Release\\CppDll.dll")]
         unsafe public static extern void sobelX(IntPtr input, IntPtr output, int input_rows, int input_cols);
 
-        [DllImport("C:\\Users\\Komputer\\ImageOperators\\GUIproject\\x64\\Release\\CppDll.dll")]
+        [DllImport("C:\\Users\\user\\ImageOperators\\GUIproject\\x64\\Release\\CppDll.dll")]
         unsafe public static extern void sobelY(IntPtr input, IntPtr output, int input_rows, int input_cols);
 
-        [DllImport("C:\\Users\\Komputer\\ImageOperators\\GUIproject\\x64\\Release\\CppDll.dll")]
+        [DllImport("C:\\Users\\user\\ImageOperators\\GUIproject\\x64\\Release\\CppDll.dll")]
         unsafe public static extern void roberts(IntPtr input, IntPtr output, int input_rows, int input_cols);
 
-        [DllImport("C:\\Users\\Komputer\\ImageOperators\\GUIproject\\x64\\Release\\CppDll.dll")]
-        unsafe public static extern void sobel(IntPtr input, IntPtr output, int input_rows, int input_cols);
 
         
         
 
-
-
-        [DllImport("C:\\Users\\Komputer\\ImageOperators\\GUIproject\\x64\\Debug\\AsmDll.dll")]
+        [DllImport("C:\\Users\\user\\ImageOperators\\GUIproject\\x64\\Debug\\AsmDll.dll")]
         unsafe public static extern void invertImage(IntPtr input, IntPtr output, int rows, int cols);
 
-        [DllImport("C:\\Users\\Komputer\\ImageOperators\\GUIproject\\x64\\Debug\\AsmDll.dll")]
+        [DllImport("C:\\Users\\user\\ImageOperators\\GUIproject\\x64\\Debug\\AsmDll.dll")]
         unsafe public static extern void sobelOperatorX(IntPtr input, IntPtr output, int rows, int cols);
 
-        [DllImport("C:\\Users\\Komputer\\ImageOperators\\GUIproject\\x64\\Debug\\AsmDll.dll")]
+        [DllImport("C:\\Users\\user\\ImageOperators\\GUIproject\\x64\\Debug\\AsmDll.dll")]
         unsafe public static extern void sobelOperatorY(IntPtr input, IntPtr output, int rows, int cols);
 
-        [DllImport("C:\\Users\\Komputer\\ImageOperators\\GUIproject\\x64\\Debug\\AsmDll.dll")]
+        [DllImport("C:\\Users\\user\\ImageOperators\\GUIproject\\x64\\Debug\\AsmDll.dll")]
         unsafe public static extern void robertsOperator(IntPtr input, IntPtr output, int rows, int cols);
     }
 }

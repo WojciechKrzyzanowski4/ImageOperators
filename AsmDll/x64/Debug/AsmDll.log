@@ -1,7 +1,7 @@
 ﻿  Assembling assembly.asm...
-assembly.asm(11): warning A6004: procedure argument or local not referenced : hInstDLL
-assembly.asm(11): warning A6004: procedure argument or local not referenced : reason
-assembly.asm(11): warning A6004: procedure argument or local not referenced : reserved1
-     Creating library C:\Users\Komputer\ImageOperators\GUIproject\x64\Debug\AsmDll.lib and object C:\Users\Komputer\ImageOperators\GUIproject\x64\Debug\AsmDll.exp
-AsmDll.exp : warning LNK4070: /OUT:JADll.dll directive in .EXP differs from output filename 'C:\Users\Komputer\ImageOperators\GUIproject\x64\Debug\AsmDll.dll'; ignoring directive
-  AsmDll.vcxproj -> C:\Users\Komputer\ImageOperators\GUIproject\x64\Debug\AsmDll.dll
+assembly.asm(20): warning A6004: procedure argument or local not referenced : hInstDLL
+assembly.asm(20): warning A6004: procedure argument or local not referenced : reason
+assembly.asm(20): warning A6004: procedure argument or local not referenced : reserved1
+     Trwa tworzenie biblioteki C:\Users\user\ImageOperators\GUIproject\x64\Debug\AsmDll.lib i obiektu C:\Users\user\ImageOperators\GUIproject\x64\Debug\AsmDll.exp
+AsmDll.exp : warning LNK4070: /OUT: dyrektywa JADll.dll w pliku .EXP jest inna niż nazwa pliku wyjściowego "C:\Users\user\ImageOperators\GUIproject\x64\Debug\AsmDll.dll"; dyrektywa została zignorowana
+  AsmDll.vcxproj -> C:\Users\user\ImageOperators\GUIproject\x64\Debug\AsmDll.dll

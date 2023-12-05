@@ -31,13 +31,15 @@ namespace GUIproject
             return Cv2.ImRead(imagePath);
         }
 
-        public static Mat convertToGrayscale(Mat image)
+        public static Mat mapDTO(Mat image)
         {
+            //passing through the map object 
             return image;
         }
 
         unsafe public static Mat createMat(int rows, int cols, byte* data)
         {
+            //creating OpenCVSharp mat with the same dimensions 
             Mat mat = new Mat(rows, cols, MatType.CV_8UC1, (IntPtr)data);
             return mat;
         }
@@ -97,21 +99,9 @@ namespace GUIproject
             return timeSpan;
         }
 
-        //Full sobel operator Wrappers
-        unsafe public static TimeSpan CPPsobelOperatorWrapper(Mat input, Mat output)
-        {
-            Stopwatch sw = Stopwatch.StartNew();
-            NativeMehtods.sobel(input.Data, output.Data, input.Rows, input.Cols);
-            sw.Stop();
-            TimeSpan timeSpan = sw.Elapsed;
-            return timeSpan;
-
-        }
 
 
-
-
-        //full sobel opertor Wrappers
+        //full roberts opertor Wrappers
         unsafe public static TimeSpan CPProbertsOperatorWrapper(Mat input, Mat output)
         {
             Stopwatch sw = Stopwatch.StartNew();
